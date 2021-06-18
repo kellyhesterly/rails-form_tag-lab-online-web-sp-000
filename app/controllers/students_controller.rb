@@ -17,6 +17,7 @@ class StudentsController < ApplicationController
   end
 
   def set_student
+    @student = Student.find(params[:id])
   end
 
 end
